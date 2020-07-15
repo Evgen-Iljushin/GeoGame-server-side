@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="buttons">
+    <button id="send_test_event">Send test event</button>
+    <button id="Registration_Username">Registration_Username</button>
+    <button id="Login_Username">Login_Username</button>
+    <button id="Registration_FB">Registration_FB</button>
+    <button id="Login_FB">Login_FB</button>
+    <button id="Authenticate">Authenticate</button>
+    <p></p>
+    <button id="AddSpot">AddSpot</button>
+    <input type="text" id="lat" placeholder="latitude">
+    <input type="text" id="lon" placeholder="longitude">
+    <input type="text" id="alt" placeholder="altitude">
+    <p></p>
+    <button id="CheckNearbySpots">$heckNearbySpots</button>
+    <button id="CollectSpot">CollectSpot</button>
+    <button id="GetSpotIcon">GetSpotIcon</button>
+    <button id="Get_Profile">Get_Profile</button>
+    <button id="Update_Profile">Update_Profile</button>
+    <button id="Get_Profile_Image">Get_Profile_Image</button>
+    <button id="Update_Profile_Image">Update_Profile_Image</button>
+    <button id="Test_Connection_Firebase">Test_Connection_Firebase</button>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="js/client_html_test.js"></script>
+
+<script defer src="js/firebase-app.js"></script>
+<script defer src="js/firebase-auth.js"></script>
+<script defer src="js/firebase-firestore.js"></script>
+<script src="js/init-firebase.js"></script>
+</body>
+</html>

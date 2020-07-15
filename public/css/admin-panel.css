@@ -1,0 +1,55 @@
+/* Spot -- set photo */
+
+.spot-set-photo {
+  display: flex;
+}
+
+.spot-set-photo .img-preview {
+  position: relative;
+  display: flex;
+  width: 250px;
+  height: 250px;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #4268F6;
+  cursor: pointer;
+  text-align: center;
+}
+
+.spot-set-photo .img-placeholder,
+.spot-set-photo .img-hover-message {
+  font-size: 24px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #4268F6;
+}
+
+.spot-set-photo .img-hover-message {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(255, 255, 255, 0.85);
+  color: #4268F6;
+  opacity: 0;
+  transition: opacity .4s;
+}
+.spot-set-photo .img-hover-message:hover {
+  opacity: 1;
+}
+
+.spot-set-photo .img-preview img {
+  width: 100%;
+}
+
+.spot-set-photo .img-input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
